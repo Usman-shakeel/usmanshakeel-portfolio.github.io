@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usman Shakeel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/be625547ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#address">Address</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Electronics Engineer</p>
+                <h1>Hi, I'm <span>Usman Shakeel</span><br>from IIEE-NEDUET.</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------My Video------------------
+    <div id="video">
+        <div class="container">
+            <iframe id="myvideo" width="560" height="315" src="https://www.youtube.com/embed/t5tcRQFV5Jo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div> -->
+
+
+    <!-----------------About---------------->
+    <div id="about"></div>
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/about-me.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am an industrial electronics engineer with experience in HMI design, PLC programming, and PCB
+                    design. I also have expertise in Adobe Photoshop and After Effects, as well as proficiency in
+                    Microsoft Office. With my diverse skill set, I am able to effectively design and implement control
+                    systems for industrial processes and machinery, as well as create visually appealing graphics and
+                    media for various projects. I am dedicated to continuously learning and expanding my knowledge in my
+                    field to provide high quality solutions for my clients.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>PLC Programming (Step-7, TIA Portal)</span><br>
+                            Experienced in programming and commissioning PLCs using
+                            various programming languages and software tools to control
+                            industrial processes and machinery</li>
+                        <li><span>HMI Designing (WinCC)</span><br>
+                            Experience in designingand programming HMIs for industrial
+                            control systems.</li>
+                        <li><span>Adobe (Photoshop, After-Effects)</span><br>
+                            Proficient in Adobe Photoshop and After Effects for
+                            graphic and visual effects design.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Internship at Artistic Miliner (June - 2022)</span><br>
+                            It was a 6 weeks Internship in Maintenance
+                            Department. During this period I've learned the
+                            function and on-ground knowledge of Utilities,
+                            Generators, Production, Power House, Gas Turbine,
+                            Chillers, RO Plant, VFD's, HMI, SCADA and different
+                            PLC's.</li>
+                        <li><span>Virtual Internship by Mindstorm Engineering (Dec - 2021)</span><br>
+                            It was a 4 weeks Virtual Internship. Internship has
+                            covered both theoretical and mostly practical hands
+                            on sessions including Industrial Automation
+                            technologies such as PLC, HMI & SCADA as well as IIoT
+                            technologies such as IIoT enabled PLCs, Python
+                            Programming, Cloud Platforms and AI.
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>B.E Industrial Electronics Engineering from IIEE - NEDUET (2018-22)</span><br>
+                            i have completed bachelors of Industrial Electronics
+                            Engineering by securing 2.9 CGPA from Institute of
+                            Industrial Electronics Engineering (IIEE) which is
+                            affiliated with NED University in 2022.</li>
+                        <li><span>Intermediate (2017)</span><br>
+                            i have completed intermediate in Pre-Engineering by
+                            securing 84% A1 Grade from BISE Mirpur Khas in 2017.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Industrial Automation</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, neque.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Embedded systems</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, neque.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>PCB Designing</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, neque.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------portfolio---------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Smart Portable ECG Machine</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Automated Irrigation system</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Infrared sensor based IR counter</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -----------------contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i><a href=" mailto: usmanshakeel.30@iiee.edu.pk">usmanshakeel.30@iiee.com</a> </p>
+                    <p><i class="fa-solid fa-phone-square-alt"></i>+92331-3868220</p>
+                    <div class="social-icon">
+                        <a href="https://facebook.com/usmanbandexha.jat" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/usmanbandesha10" target="_blank"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://intagram.com/usman.bandesha" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/usman-shakeel-10b700221" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Usman Shakeel Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="post">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Mesage" cols="6" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <!---------------------Location------------------ -->
+            
+    </div>
+    <div id="address">
+        <div class="container">
+            <div class="row">
+                <div class="address-left">
+                    <h1 class="sub-title">Location</h1>
+                    <p>L-19, Street#10, Jahangir Town, Mosamiyat, University Road, Karachi.</p>
+                </div>
+                <div class="address-right">
+                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1086.322022347463!2d67.14362482394101!3d24.937640528777962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb338604c69e865%3A0xa90d25777dc133ee!2zMjTCsDU2JzE2LjMiTiA2N8KwMDgnMzcuNSJF!5e0!3m2!1sen!2s!4v1674400266823!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+
+</html>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+                sidemenu.style.right = "0px";
+        }
+        function closemenu(){
+                sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+</body>
+
+</html>
